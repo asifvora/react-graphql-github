@@ -35,12 +35,15 @@ class App extends Component {
     return (
       <div className="App">
         <main id="work">
-          <h1 className="lg-heading">React <span className="text-secondary">GraphQL GitHub </span></h1>
+          <h1 className="lg-heading">React <span className="text-secondary">GraphQL</span> GitHub </h1>
           <h2 className="sm-heading">Check out some of my repositories...</h2>
-          <div className="projects">
-            {repositories ? (<Repositories repositories={repositories} errors={errors} />) : (<p>No information yet ...</p>)}
-          </div>
+          {repositories ? (
+            <div className="projects">
+              <Repositories repositories={repositories} errors={errors} />
+            </div>
+          ) : (<h2><p>No information yet ...</p></h2>)}
         </main>
+        <footer id="main-footer">Copyright © {new Date().getFullYear()}</footer>
       </div>
     );
   }

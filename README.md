@@ -1,2 +1,2 @@
-# Github Graphql
-Github Graphql
+# React GraphQL GitHub
+React GraphQL GitHub

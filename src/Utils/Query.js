@@ -2,7 +2,7 @@ const GET_ORGANIZATION = `
   {
     viewer {
       name
-       repositories(last: 5) {
+       repositories(last: 100) {
          nodes {
            name,
            description,
